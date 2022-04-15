@@ -15,11 +15,22 @@ nav ul {
     flex-flow: row wrap;
 }
 
+nav ul li a {
+    color: $white;
+    border-bottom: 5px solid transparent;
+}
+
+.nav-active, nav ul li a:hover {
+    border-bottom: 5px solid $secondary;
+    transition: border-bottom-color 0.3s ease-in;
+}
+
 
 /* links and buttons */
 
 a, a:visited, a:hover {
     text-decoration: none;
+    color: $white;
 }
 
 .title-link, .title-link:visited, .comment-link, .comment-link:visited {
@@ -50,9 +61,9 @@ header {
     color: $secondary;
 }
 
-a, button {
-    transition: all 0.2s ease-in-out;
-}
+// a, button {
+//     transition: all 0.2s ease-in-out;
+// }
 
 .nav-button {
     background: none;

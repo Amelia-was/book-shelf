@@ -1,23 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
+    const navLinks = ['Home', 'About', 'FAQ'];
+    const [navActive, setNavActive] = useState(navLinks[0]);
+
     return (
-        <nav className='bg-primary'>
-            this is the nav
+        <nav className='bg-primary flex-row justify-between p-4'>
+            <h1>this is the nav</h1>
             <ul>
                 <li>
-                    <Link to='/'>
+                    <Link 
+                        to='/' 
+                        className={`mr-2 ${navActive === 'Home' ? 'nav-active' : ''}`}
+                        onClick={() => {setNavActive('Home')}}
+                    >
                         Home
                     </Link>
                 </li>
                 <li>
-                    <Link to='/about'>
+                    <Link 
+                        to='/about'
+                        className={`mr-2 ${navActive === 'About' ? 'nav-active' : ''}`}
+                        onClick={() => { setNavActive('About') }}
+                    >
                         About
                     </Link>
                 </li>
                 <li>
-                    <Link to='/faq'>
+                    <Link 
+                        to='/faq'
+                        className={`mr-2 ${navActive === 'FAQ' ? 'nav-active' : ''}`}
+                        onClick={() => { setNavActive('FAQ') }}
+                    >
                         FAQ
                     </Link>
                 </li>

@@ -9,7 +9,9 @@ import FAQ from './pages/FAQ';
 function App() {
   return (
     <Router>
-      
+      <section className='page flex-column justify-between'>
+
+
         <Nav />
         <Routes>
           <Route exact path='/' element={<Home />} />
@@ -18,6 +20,8 @@ function App() {
           <Route render={() => <h1>Wrong page!</h1>} />
         </Routes>
         <Footer />
+
+      </section>
     </Router>
   );
 }

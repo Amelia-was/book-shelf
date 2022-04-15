@@ -4,15 +4,15 @@
 @import url(https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,400;0,700;1,400;1,700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,400;0,700;1,400;1,700&display=swap);
 .bg-primary {
-  background: #e09f3e;
+  background: #723d46;
 }
 
 .bg-secondary {
-  background: #694a68;
+  background: #e26d5c;
 }
 
 .bg-tertiary {
-  background: #80597e;
+  background: #c9cba3;
 }
 
 .bg-white {
@@ -21,6 +21,26 @@
 
 .bg-dark {
   background: #000;
+}
+
+.text-primary {
+  color: #723d46;
+}
+
+.text-secondary {
+  color: #e26d5c;
+}
+
+.text-tertiary {
+  color: #c9cba3;
+}
+
+.text-white {
+  color: #f2f2f2;
+}
+
+.text-dark {
+  color: #000;
 }
 
 body {
@@ -35,15 +55,15 @@ body {
 }
 
 .bg-primary {
-  background: #e09f3e;
+  background: #723d46;
 }
 
 .bg-secondary {
-  background: #694a68;
+  background: #e26d5c;
 }
 
 .bg-tertiary {
-  background: #80597e;
+  background: #c9cba3;
 }
 
 .bg-white {
@@ -52,6 +72,26 @@ body {
 
 .bg-dark {
   background: #000;
+}
+
+.text-primary {
+  color: #723d46;
+}
+
+.text-secondary {
+  color: #e26d5c;
+}
+
+.text-tertiary {
+  color: #c9cba3;
+}
+
+.text-white {
+  color: #f2f2f2;
+}
+
+.text-dark {
+  color: #000;
 }
 
 body {
@@ -79,9 +119,20 @@ nav ul {
   flex-flow: row wrap;
 }
 
+nav ul li a {
+  color: #f2f2f2;
+  border-bottom: 5px solid transparent;
+}
+
+.nav-active, nav ul li a:hover {
+  border-bottom: 5px solid #e26d5c;
+  transition: border-bottom-color 0.3s ease-in;
+}
+
 /* links and buttons */
 a, a:visited, a:hover {
   text-decoration: none;
+  color: #f2f2f2;
 }
 
 .title-link, .title-link:visited, .comment-link, .comment-link:visited {
@@ -89,11 +140,11 @@ a, a:visited, a:hover {
 }
 
 .title-link:hover, .comment-link:hover {
-  color: #694a68;
+  color: #e26d5c;
 }
 
 header {
-  background: #e09f3e;
+  background: #723d46;
   height: 100px;
   position: sticky;
   position: -webkit-sticky;
@@ -109,11 +160,7 @@ header {
 }
 
 .nav-link:hover {
-  color: #694a68;
-}
-
-a, button {
-  transition: all 0.2s ease-in-out;
+  color: #e26d5c;
 }
 
 .nav-button {
@@ -148,17 +195,17 @@ button:hover {
 
 .border, .form-input, .input-btn-style, .btn {
   color: #f2f2f2;
-  border: 1px solid #694a68;
+  border: 1px solid #e26d5c;
 }
 
 .solid-bg, .btn-solid {
-  background: #694a68;
+  background: #e26d5c;
   color: #f2f2f2;
 }
 
 .outline-bg, .form-input, .input-btn-style, .btn-line {
   background: #f2f2f2;
-  color: #694a68;
+  color: #e26d5c;
 }
 
 .btn {
@@ -167,11 +214,11 @@ button:hover {
 }
 
 .btn-solid:hover {
-  background: #80597e;
+  background: #c9cba3;
 }
 
 .btn-line:hover {
-  background: #694a68;
+  background: #e26d5c;
   color: #f2f2f2;
 }
 
@@ -185,16 +232,16 @@ button:hover {
 }
 
 .back-link {
-  color: #694a68;
+  color: #e26d5c;
 }
 
 .back-link:hover {
-  color: #80597e;
+  color: #c9cba3;
 }
 
 .edit-link {
   display: block;
-  background: #694a68;
+  background: #e26d5c;
   width: 100%;
   margin: 0;
   box-shadow: none;
@@ -203,7 +250,7 @@ button:hover {
 }
 
 .no-posts {
-  color: #e09f3e;
+  color: #723d46;
 }
 
 .no-posts:hover {
@@ -218,14 +265,14 @@ button:hover {
 
 .post-title {
   font-family: "Averia Serif Libre", cursive;
-  color: #694a68;
+  color: #e26d5c;
   font-weight: bold;
   font-size: 24px;
 }
 
 .post-list-item {
   width: 100%;
-  border-bottom: 1px solid #694a68;
+  border-bottom: 1px solid #e26d5c;
 }
 
 .post-list-item:last-child {
@@ -243,7 +290,7 @@ button:hover {
 }
 
 .dashboard-post {
-  border: 1px solid #694a68;
+  border: 1px solid #e26d5c;
   width: 200px;
   height: max-content;
   display: inline-block;
@@ -285,7 +332,7 @@ textarea.form-input {
 label {
   font-size: 12px;
   font-style: italic;
-  color: #694a68;
+  color: #e26d5c;
 }
 
 .new-post-form {
@@ -294,15 +341,15 @@ label {
 }
 
 .bg-primary {
-  background: #e09f3e;
+  background: #723d46;
 }
 
 .bg-secondary {
-  background: #694a68;
+  background: #e26d5c;
 }
 
 .bg-tertiary {
-  background: #80597e;
+  background: #c9cba3;
 }
 
 .bg-white {
@@ -311,6 +358,26 @@ label {
 
 .bg-dark {
   background: #000;
+}
+
+.text-primary {
+  color: #723d46;
+}
+
+.text-secondary {
+  color: #e26d5c;
+}
+
+.text-tertiary {
+  color: #c9cba3;
+}
+
+.text-white {
+  color: #f2f2f2;
+}
+
+.text-dark {
+  color: #000;
 }
 
 body {
@@ -328,8 +395,12 @@ main {
   background: #f2f2f2;
 }
 
+.page {
+  height: 100vh;
+}
+
 .hero {
-  background: #e09f3e;
+  background: #723d46;
   height: 300px;
 }
 
@@ -342,15 +413,15 @@ main {
 }
 
 .bg-primary {
-  background: #e09f3e;
+  background: #723d46;
 }
 
 .bg-secondary {
-  background: #694a68;
+  background: #e26d5c;
 }
 
 .bg-tertiary {
-  background: #80597e;
+  background: #c9cba3;
 }
 
 .bg-white {
@@ -359,6 +430,26 @@ main {
 
 .bg-dark {
   background: #000;
+}
+
+.text-primary {
+  color: #723d46;
+}
+
+.text-secondary {
+  color: #e26d5c;
+}
+
+.text-tertiary {
+  color: #c9cba3;
+}
+
+.text-white {
+  color: #f2f2f2;
+}
+
+.text-dark {
+  color: #000;
 }
 
 body {
@@ -402,7 +493,7 @@ h1, h4 {
 
 h2, h3 {
   padding: 1rem;
-  color: #694a68;
+  color: #e26d5c;
 }
 
 h4 {
@@ -410,15 +501,15 @@ h4 {
 }
 
 .bg-primary {
-  background: #e09f3e;
+  background: #723d46;
 }
 
 .bg-secondary {
-  background: #694a68;
+  background: #e26d5c;
 }
 
 .bg-tertiary {
-  background: #80597e;
+  background: #c9cba3;
 }
 
 .bg-white {
@@ -427,6 +518,26 @@ h4 {
 
 .bg-dark {
   background: #000;
+}
+
+.text-primary {
+  color: #723d46;
+}
+
+.text-secondary {
+  color: #e26d5c;
+}
+
+.text-tertiary {
+  color: #c9cba3;
+}
+
+.text-white {
+  color: #f2f2f2;
+}
+
+.text-dark {
+  color: #000;
 }
 
 body {
