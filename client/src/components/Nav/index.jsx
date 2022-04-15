@@ -6,8 +6,8 @@ const Nav = () => {
     const [navActive, setNavActive] = useState(navLinks[0]);
 
     return (
-        <nav className='bg-primary flex-row justify-between p-4'>
-            <h1>this is the nav</h1>
+        <nav className='bg-primary flex-row justify-between align-center p-4'>
+            <h2>bookshelf</h2>
             <ul>
                 <li>
                     <Link 

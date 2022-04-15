@@ -11,14 +11,19 @@ function App() {
     <Router>
       <section className='page flex-column justify-between'>
 
-
         <Nav />
-        <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route exact path='/about' element={<About />} />
-          <Route exact path='/faq' element={<FAQ />} />
-          <Route render={() => <h1>Wrong page!</h1>} />
-        </Routes>
+
+        <main>
+
+          <Routes>
+            <Route exact path='/' element={<Home />} />
+            <Route exact path='/about' element={<About />} />
+            <Route exact path='/faq' element={<FAQ />} />
+            <Route render={() => <h1>Wrong page!</h1>} />
+          </Routes>
+        
+        </main>
+
         <Footer />
 
       </section>

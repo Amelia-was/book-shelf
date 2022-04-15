@@ -10,9 +10,11 @@ $lightYellow: #ffe1a8;
 $darkPurple: #472d30;
 $lightPurple: #80597e;
 
+$lightGray: #E2E2E2;
+
 $primary: $purple;
-$secondary: $pink;
-$tertiary: $green;
+$secondary: $green;
+$tertiary: $pink;
 $bg: $white;
 $text: $black;
 $dark: $black;
@@ -51,9 +53,11 @@ $margin-padding: ('margin': 'm', 'padding': 'p');
 $spacers: ($zero: $zero, $smallestSpacer: '1', $smallSpacer: '2', $bigSpacer: '3', $biggerSpacer: '4', $biggestSpacer: '5');
 $sides: ('': '', '-top': 't', '-bottom': 'b', '-right': 'r', '-left': 'l');
 
+$border-radius: 8px;
+
 $font-body: Helvetica, Arial, sans-serif;
 $font-heading: 'Averia Serif Libre', cursive;
-$font-sizes: (48, 36, 24, 12, 10);
+$font-sizes: (96, 36, 24, 12, 10);
 
 $box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.1);
 

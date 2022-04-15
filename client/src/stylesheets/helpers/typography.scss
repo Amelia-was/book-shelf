@@ -4,7 +4,7 @@
 @for $i from 1 through 4 {
     h#{$i} {
         font-family: $font-heading;
-        font-size: list.nth($font-sizes, $i);
+        font-size: #{list.nth($font-sizes, $i)}px;
     }
 }
 
@@ -12,13 +12,12 @@ p {
     color: $dark;
 }
 
-h1, h4 {
-    color: $bg;
+h1, h2, h4 {
+    color: $white;
 }
 
 h2, h3 {
     padding: $bigSpacer;
-    color: $secondary;
 }
 
 h4 {

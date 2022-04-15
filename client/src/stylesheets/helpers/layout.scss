@@ -1,7 +1,7 @@
 @import 'base';
 
 main {
-    background: $bg;
+    flex-grow: 3;
 }
 
 .page {
@@ -9,9 +9,23 @@ main {
 }
 
 .hero {
-    background: $primary;
-    height: 300px;
+    //background: url('../../assets/imgs/bookshelf.jpeg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //position: absolute;
+    //top: 87px;
+    //height: 100%;
+    //width: 100vw;
 }
+
+// .hero-img {
+//     //width: 100vw;
+//     max-height: 100%;
+//     object-fit: cover;
+// }
 
 .posts {
     // max-width: 1024px;

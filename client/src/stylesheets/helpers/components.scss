@@ -1,5 +1,6 @@
 @use 'sass:list';
 @import 'base';
+@import 'utility';
 
 li {
     list-style-type: none;
@@ -10,6 +11,12 @@ hr {
 }
 
 /* nav */
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
 nav ul {
     display: flex;
     flex-flow: row wrap;
@@ -23,6 +30,45 @@ nav ul li a {
 .nav-active, nav ul li a:hover {
     border-bottom: 5px solid $secondary;
     transition: border-bottom-color 0.3s ease-in;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* card */
+
+.card {
+    border: 1px solid $lightGray;
+    border-radius: $border-radius;
+    max-width: 400px;
+    @extend .flex-column;
+}
+
+.card-header {
+    border-radius: $border-radius $border-radius 0 0;
+    background: $secondary;
+}
+
+.card-body {
+    padding: $smallSpacer;
+    @extend .flex-column;
+}
+
+/* book */
+.book-title {
+    margin-right: $smallSpacer;
+}
+
+.book-list-item {
+    margin-bottom: $smallSpacer;
+}
+
+.book-list-item:last-child {
+    margin-bottom: 0;
 }
 
 
