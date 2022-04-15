@@ -30,13 +30,16 @@ $color in $colors {
     }
 }
 
+// spacing
 $zero: 0;
-$smallestSpacer: 5px;
-$smallSpacer: 10px;
-$bigSpacer: 20px;
+$smallestSpacer: 0.3rem;
+$smallSpacer: 0.75rem;
+$bigSpacer: 1rem;
+$biggerSpacer: 2rem;
+$biggestSpacer: 3rem;
 
 $margin-padding: ('margin': 'm', 'padding': 'p');
-$spacers: ($zero: $zero, $smallestSpacer: '1', $smallSpacer: '2', $bigSpacer: '3');
+$spacers: ($zero: $zero, $smallestSpacer: '1', $smallSpacer: '2', $bigSpacer: '3', $biggerSpacer: '4', $biggestSpacer: '5');
 $sides: ('': '', '-top': 't', '-bottom': 'b', '-right': 'r', '-left': 'l');
 
 $font-body: Helvetica, Arial, sans-serif;
