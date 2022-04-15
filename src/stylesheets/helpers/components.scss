@@ -1,0 +1,257 @@
+@use 'sass:list';
+@import 'base';
+
+li {
+    list-style-type: none;
+}
+
+hr {
+    width: 75%;
+}
+
+/* links and buttons */
+
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+
+.title-link, .title-link:visited, .comment-link, .comment-link:visited {
+    color: $text;
+}
+
+.title-link:hover, .comment-link:hover {
+    color: $accent;
+}
+
+header {
+    background: $brand;
+    height: 100px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.heading-wrapper {
+    min-width: 375px;
+}
+
+.nav-link {
+    color: $bg;
+}
+
+.nav-link:hover {
+    color: $accent;
+}
+
+a, button {
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    font-size: inherit;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.smallest {
+    border-radius: $smallestSpacer;
+    padding: $smallestSpacer;
+    margin: $smallestSpacer;
+    font-size: 10px;
+}
+
+.small {
+    border-radius: $smallSpacer;
+    padding: $smallSpacer;
+    margin: $smallSpacer;
+}
+
+.big {
+    border-radius: $smallSpacer;
+    padding: $bigSpacer;
+    margin: $bigSpacer;
+    font-size: 24px;
+}
+
+.border {
+    color: $bg;
+    border: 1px solid $accent;
+}
+
+.solid-bg {
+    background: $accent;
+    color: $bg;
+}
+
+.outline-bg {
+    background: $bg;
+    color: $accent;
+}
+
+.btn {
+    @extend .border;
+    text-transform: uppercase;
+    box-shadow: $box-shadow;
+}
+
+.btn-small {
+    @extend .small;
+}
+
+.btn-smallest {
+    @extend .smallest;
+}
+
+.btn-solid {
+    @extend .solid-bg;
+}
+
+.btn-solid:hover {
+    background: $lightAccent;
+}
+
+.btn-line {
+    @extend .outline-bg;
+}
+
+.btn-line:hover {
+    background: $accent;
+    color: $bg;
+}
+
+.btn-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.input-btn-style {
+    @extend .smallest;
+    @extend .border;
+    @extend .outline-bg;
+}
+
+.edit-link, .edit-link:visited {
+    color: $bg;
+}
+                        
+.back-link {
+    color: $accent;
+}
+
+.back-link:hover {
+    color: $lightAccent;
+}
+
+.edit-link {
+    display: block;
+    background: $accent;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+    text-align: center;
+}
+
+.no-posts {
+    color: $brand;
+}
+
+.no-posts:hover {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* posts */
+.post {
+    background: $bg;
+}
+
+.post-title {
+    font-family: 'Averia Serif Libre', cursive;
+    color: $accent;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.post-list-item {
+    width: 100%;
+    border-bottom: 1px solid $accent;
+}
+
+.post-list-item:last-child {
+    border: none;
+}
+
+#post-body {
+    height: 150px;
+    width: 300px;
+}
+
+.meta {
+    font-size: 12px;
+    color: #828282;
+}
+
+.dashboard-post {
+    border: 1px solid $accent;
+    width: 200px;
+    height: max-content;
+    display: inline-block;
+}
+
+.dashboard-posts {
+    padding-left: $bigSpacer;
+}
+
+/* comments */
+
+.comment:nth-child(2n) {
+    background: #e3e3e3;
+}
+
+.comment .meta {
+    color: $text;
+}
+
+#comment-body {
+    height: 100px;
+    width: 300px;
+}
+
+/* forms */
+
+.form-container {
+    margin: $bigSpacer auto;
+    max-width: 475px;
+}
+
+.form-input-container {
+    margin-bottom: $smallSpacer;
+    // max-width: 45%;
+}
+
+.form-input {
+    @extend .big;
+    @extend .border;
+    @extend .outline-bg;
+}
+
+textarea.form-input {
+    min-width: 90% !important;
+    min-height: 400px;
+}
+
+label {
+    font-size: 12px;
+    font-style: italic;
+    color: $accent;
+}
+
+.new-post-form {
+    background: $bg;
+    max-width: 800px;
+}

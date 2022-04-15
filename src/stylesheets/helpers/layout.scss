@@ -1,0 +1,30 @@
+@import 'base';
+
+main {
+    background: $bg;
+}
+
+.hero {
+    background: $brand;
+    height: 300px;
+}
+
+.posts {
+    // max-width: 1024px;
+    max-width: 70%;
+}
+
+.sidebar {
+    min-width: 200px;
+    max-width: 400px;
+    // position: fixed;
+    // right: 0;
+    // top: 100px;
+}
+// add media query for large screens
+//sidebar align or justify: center;
+//posts width: 100%
+
+.container {
+    padding: $bigSpacer;
+}
