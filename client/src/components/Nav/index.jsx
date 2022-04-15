@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => {
     return (
-        <nav>
+        <nav className='bg-primary'>
             this is the nav
-            <ol>
+            <ul>
                 <li>
                     <Link to='/'>
                         Home
@@ -21,7 +21,7 @@ const Nav = () => {
                         FAQ
                     </Link>
                 </li>
-            </ol>
+            </ul>
         </nav>
     );
 };

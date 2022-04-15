@@ -9,6 +9,13 @@ hr {
     width: 75%;
 }
 
+/* nav */
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
 /* links and buttons */
 
 a, a:visited, a:hover {
