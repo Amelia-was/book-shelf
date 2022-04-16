@@ -88,36 +88,6 @@ a, a:visited, a:hover {
     color: $secondary;
 }
 
-header {
-    background: $primary;
-    height: 100px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-}
-
-.heading-wrapper {
-    min-width: 375px;
-}
-
-.nav-link {
-    color: $bg;
-}
-
-.nav-link:hover {
-    color: $secondary;
-}
-
-// a, button {
-//     transition: all 0.2s ease-in-out;
-// }
-
-.nav-button {
-    background: none;
-    border: none;
-    font-size: inherit;
-}
-
 button:hover {
     cursor: pointer;
 }
@@ -197,37 +167,6 @@ button:hover {
     @extend .smallest;
     @extend .border;
     @extend .outline-bg;
-}
-
-.edit-link, .edit-link:visited {
-    color: $bg;
-}
-                        
-.back-link {
-    color: $secondary;
-}
-
-.back-link:hover {
-    color: $tertiary;
-}
-
-.edit-link {
-    display: block;
-    background: $secondary;
-    width: 100%;
-    margin: 0;
-    box-shadow: none;
-    border-radius: 0;
-    text-align: center;
-}
-
-.no-posts {
-    color: $primary;
-}
-
-.no-posts:hover {
-    font-style: italic;
-    text-decoration: underline;
 }
 
 /* posts */
