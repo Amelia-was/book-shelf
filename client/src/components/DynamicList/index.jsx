@@ -1,30 +1,35 @@
 import React, { useState } from 'react';
-import { MdCheckCircle, MdDelete, MdOutlineAddCircle } from "react-icons/md";
+import { MdOutlineAddCircle } from "react-icons/md";
+import DynamicListEl from '../DynamicListEl';
 
 const DynamicList = () => {
     const [title, setTitle] = useState('');
     const [author, setAuthor] = useState('');
 
-    // check localStorage for savedBooks
-    var savedBooks = JSON.parse(localStorage.getItem('savedBooks'));
-
-    // if there is nothing in localStorage, initialize empty list
-    if (!savedBooks) {
-        savedBooks = [];
-    };
-
-    // save books to localStorage
-    const saveBooks = () => {
-        localStorage.setItem('savedBooks', JSON.stringify(savedBooks));
-    }
+    // get books from localStorage. if localStorage is empty, initialize empty array
+    var savedBooksList = JSON.parse(localStorage.getItem('savedBooksList')) || [];
+    const [savedBooks, setSavedBooks] = useState(savedBooksList);
 
     // add book to list
     const addToList = () => {
-        savedBooks.push({
+        // create new book
+        let newBook = {
             bookTitle: title,
             bookAuthor: author
-        });
-        saveBooks();
+        };
+
+        // update savedBooks in state
+        setSavedBooks([...savedBooks, newBook]);
+
+        // add new book to copy of array for localStorage
+        savedBooksList.push(newBook);
+
+        // save to localStorage
+        localStorage.setItem('savedBooksList', JSON.stringify(savedBooksList));
+
+        // reset form values
+        setTitle('');
+        setAuthor('');
     };
 
 
@@ -36,28 +41,23 @@ const DynamicList = () => {
             </div>
             <div className='card-body'>
 
-
-                <ul>
-                    <li className='book-list-item'>
-                        <form className='flex-row align-center' onSubmit={
-                            e => {
-                            e.preventDefault();
-                            addToList();
-                        }}>
-
-                        <input type='text' id='title' placeholder='Great Expectations' className='mr-1' value={title} onChange={(e) => setTitle(e.target.value)} />
-                        <input type='text' id='author' placeholder='Charles Dickens' className='mr-1' value={author} onChange={(e) => setAuthor(e.target.value)} />
-                        <button type='submit' className='icon-btn'>
-                            <MdCheckCircle className='icon' />   
-                        </button>
-                        <MdDelete className='icon d-none' />
-                        <MdOutlineAddCircle className='icon d-none' />
-                        </form>
-
-
-                    </li>
-
+                <ul className='mb-2' id='bookList'>
+                    {savedBooks.map(book =>
+                        <DynamicListEl key={book.bookTitle} bookTitle={book.bookTitle} bookAuthor={book.bookAuthor} />
+                    )}
                 </ul>
+                <form className='flex-row align-center' onSubmit={
+                    e => {
+                        e.preventDefault();
+                        addToList();
+                    }}>
+
+                    <input type='text' id='title' placeholder='Great Expectations' className='mr-1' value={title} onChange={(e) => setTitle(e.target.value)} />
+                    <input type='text' id='author' placeholder='Charles Dickens' className='mr-1' value={author} onChange={(e) => setAuthor(e.target.value)} />
+                    <button type='submit' className='icon-btn'>
+                        <MdOutlineAddCircle className='icon' />
+                    </button>
+                </form>
             </div>
         </div>
     );

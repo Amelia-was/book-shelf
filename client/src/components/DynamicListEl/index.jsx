@@ -1,14 +1,19 @@
 import React from 'react';
+import { MdDelete } from "react-icons/md";
 
-const DynamicListEl = () => {
+const DynamicListEl = ({ bookTitle, bookAuthor }) => {
     return (
-        <li className='book-list-item'>
-            <span className='book-title'>
-                Pride and Prejudice
+        <li className='book-list-item flex-row align-center justify-between'>
+            <span>
+                <span className='book-title'>
+                    {bookTitle}
+                </span>
+                <em className='book-author'>
+                    {bookAuthor}
+                </em>
             </span>
-            <em className='book-author'>
-                Jane Austen
-            </em>
+
+            <MdDelete className='icon' />
         </li>
     );
 };
