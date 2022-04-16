@@ -44,7 +44,7 @@ footer {
 .card {
     border: 1px solid $lightGray;
     border-radius: $border-radius;
-    max-width: 400px;
+    max-width: 500px;
     @extend .flex-column;
 }
 
@@ -72,6 +72,35 @@ footer {
     margin-bottom: 0;
 }
 
+/* dynamic list */
+.icon {
+    opacity: 60%;
+    font-size: 24px;
+}
+
+.icon:hover {
+    cursor: pointer;
+    //color: $secondary;
+    opacity: 100%;
+    transition: all 0.3s ease-in;
+}
+
+.icon-btn {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+input {
+    border-radius: $border-radius;
+    border: 1px solid $lightGray;
+    padding: $smallSpacer;
+}
+
+input::placeholder {
+    font-style: italic;
+    font-weight: 300;
+}
 
 /* links and buttons */
 

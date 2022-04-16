@@ -2,10 +2,10 @@ import React from 'react';
 
 const List = () => {
     return(
-        <div className='card'>
+        <div className='card mt-2'>
             <div className='card-header'>
 
-            <h3>My Favourite Books</h3>
+            <h3>Amelia's Favourite Books</h3>
             </div>
             <div className='card-body'>
 
