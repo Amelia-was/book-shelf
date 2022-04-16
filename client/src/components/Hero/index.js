@@ -6,7 +6,7 @@ const Hero = () => {
         <section className='hero flex-row justify-center align-center' style={{
             backgroundImage: `url(${background})`
         }}>
-            <h1 className='p-2'>Welcome to my bookshelf.</h1>
+            <h1 className='p-2'>Welcome to your bookshelf.</h1>
         </section>
     );
 };

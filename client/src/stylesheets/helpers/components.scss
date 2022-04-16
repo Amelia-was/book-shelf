@@ -39,6 +39,28 @@ footer {
     bottom: 0;
 }
 
+/* search */
+.input-lg-attached {
+    padding: $bigSpacer;
+    border-radius: $border-radius 0 0 $border-radius;
+    border-top: 1px solid $lightGray;
+    border-bottom: 1px solid $lightGray;
+    border-left: 1px solid $lightGray;
+}
+
+.btn-lg-attached {
+    background: $secondary;
+    color: $dark-primary;
+    padding: $bigSpacer;
+    border-radius: 0 $border-radius $border-radius 0;
+    border: none;
+}
+
+.btn-lg-attached:hover {
+    background: $dark-secondary;
+    transition: all 0.3s ease-in;
+}
+
 /* card */
 
 .card {

@@ -5,6 +5,7 @@ $black: #000;
 $purple: #723d46;
 $pink: #e26d5c;
 $green: #c9cba3;
+$darkGreen: #a2a383;
 $lightYellow: #ffe1a8;
 $darkPurple: #472d30;
 $lightPurple: #80597e;
@@ -13,7 +14,9 @@ $yellow: #e09f3e;
 $lightGray: #E2E2E2;
 
 $primary: $purple;
+$dark-primary: $darkPurple;
 $secondary: $green;
+$dark-secondary: $darkGreen;
 $tertiary: $pink;
 $bg: $white;
 $text: $black;
@@ -21,7 +24,9 @@ $dark: $black;
 
 $colors: (
     'primary': $primary,
+    'dark-primary': $dark-primary,
     'secondary': $secondary,
+    'dark-secondary': $dark-secondary,
     'tertiary': $tertiary,
     'white': $white,
     'dark': $dark

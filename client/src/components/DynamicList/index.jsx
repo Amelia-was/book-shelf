@@ -32,6 +32,18 @@ const DynamicList = () => {
         setAuthor('');
     };
 
+    // remove book
+    const removeBook = (bookTitleInput) => {
+        // remove from savedBooksList
+        savedBooksList = savedBooksList.filter(book => book.bookTitle !== bookTitleInput);
+
+        // update state
+        setSavedBooks(savedBooksList);
+
+        // save to localStorage
+        localStorage.setItem('savedBooksList', JSON.stringify(savedBooksList));
+    }
+
 
     return (
         <div className='card'>
@@ -42,8 +54,16 @@ const DynamicList = () => {
             <div className='card-body'>
 
                 <ul className='mb-2' id='bookList'>
+                    {/* gets saved books and render them to the list */}
                     {savedBooks.map(book =>
-                        <DynamicListEl key={book.bookTitle} bookTitle={book.bookTitle} bookAuthor={book.bookAuthor} />
+                           
+                            <DynamicListEl
+                                key={book.bookTitle}
+                                bookTitle={book.bookTitle}
+                                bookAuthor={book.bookAuthor}
+                                onBookDelete={removeBook}
+                            />
+
                     )}
                 </ul>
                 <form className='flex-row align-center' onSubmit={
@@ -52,8 +72,10 @@ const DynamicList = () => {
                         addToList();
                     }}>
 
-                    <input type='text' id='title' placeholder='Great Expectations' className='mr-1' value={title} onChange={(e) => setTitle(e.target.value)} />
-                    <input type='text' id='author' placeholder='Charles Dickens' className='mr-1' value={author} onChange={(e) => setAuthor(e.target.value)} />
+                    <label htmlFor='title' className='d-none'>Enter book title</label>
+                    <input type='text' id='title' name='title' placeholder='Book Title' className='mr-1' value={title} onChange={(e) => setTitle(e.target.value)} required/>
+                    <label htmlFor='author' className='d-none'>Enter book title</label>
+                    <input type='text' id='author' name='author' placeholder='Author' className='mr-1' value={author} onChange={(e) => setAuthor(e.target.value)} required/>
                     <button type='submit' className='icon-btn'>
                         <MdOutlineAddCircle className='icon' />
                     </button>
