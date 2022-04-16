@@ -7,9 +7,9 @@ const Home = () => {
         <>
         <Hero />
 
-        <section className='h-100'>
+        <section className='h-100 flex-row justify-center align-center'>
 
-            <p>this is the Home page</p>
+            <p>These are some of my favourite books. Soon you'll be able to sign up and keep track of your favourite books too!</p>
 
             <List />
         </section>
