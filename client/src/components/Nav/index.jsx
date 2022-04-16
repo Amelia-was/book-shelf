@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
+    // keeps track of nav bar state
     const navLinks = ['Home', 'About', 'FAQ'];
     const [navActive, setNavActive] = useState(navLinks[0]);
 

@@ -51,6 +51,7 @@ footer {
 .card-header {
     border-radius: $border-radius $border-radius 0 0;
     background: $secondary;
+    padding: $smallSpacer;
 }
 
 .card-body {

@@ -5,14 +5,18 @@ import Hero from '../components/Hero';
 const Home = () => {
     return (
         <>
-        <Hero />
+            <Hero />
 
-        <section className='h-100 flex-row justify-center align-center'>
+            <section className='h-100 flex-row justify-center align-center'>
 
-            <p>These are some of my favourite books. Soon you'll be able to sign up and keep track of your favourite books too!</p>
+                <div className='flex-column align-end mr-4'>
+                    <h3 className='mb-2'>Welcome!</h3>
+                    <p>These are some of my favourite books.</p>
+                    <p>Soon you'll be able to sign up and keep track of your favourite books too!</p>
+                </div>
 
-            <List />
-        </section>
+                <List />
+            </section>
 
         </>
     );

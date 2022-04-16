@@ -184,8 +184,16 @@ body {
   justify-content: center;
 }
 
+.justify-end {
+  justify-content: end;
+}
+
 .align-start {
   align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
 }
 
 .align-stretch {
@@ -499,6 +507,7 @@ footer {
 .card-header {
   border-radius: 8px 8px 0 0;
   background: #c9cba3;
+  padding: 0.75rem;
 }
 
 .card-body {
@@ -965,8 +974,16 @@ body {
   justify-content: center;
 }
 
+.justify-end {
+  justify-content: end;
+}
+
 .align-start {
   align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
 }
 
 .align-stretch {

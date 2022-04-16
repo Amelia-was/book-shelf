@@ -3,7 +3,9 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer className='bg-primary p-4'>
-            this is the Footer
+            <p className='text-white'>
+                © bookshelf 2022
+            </p>
         </footer>
     );
 };

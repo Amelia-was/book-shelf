@@ -27,8 +27,16 @@
     justify-content: center;
 }
 
+.justify-end {
+    justify-content: end;
+}
+
 .align-start {
     align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
 }
 
 .align-stretch {

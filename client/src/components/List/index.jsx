@@ -43,6 +43,22 @@ const List = () => {
                         Greg Sestero & Tom Bissell
                     </em>
                 </li>
+                    <li className='book-list-item'>
+                        <span className='book-title'>
+                            Matilda
+                        </span>
+                        <em className='book-author'>
+                            Roald Dahl
+                        </em>
+                    </li>
+                    <li className='book-list-item'>
+                        <span className='book-title'>
+                            Fates and Furies
+                        </span>
+                        <em className='book-author'>
+                            Lauren Groff
+                        </em>
+                    </li>
         </ul>
             </div>
         </div>
